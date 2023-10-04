@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+}
+
+#chat-body{
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: minmax(3.125rem, auto) 6.25rem;
+    grid-template-rows: 2.5rem 2.5rem auto;
+    align-items: stretch;
+    grid-template-areas:
+        " header   setting  "
+        " header  main_menu "
+        "  main     main    ";
+}
+
+/* 최상단 닉네임창 */
+
+.nickname {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    text-align: center;
+    position: sticky; /* 고정 위치 설정 */
+    top: 0; /* 맨 위에 고정 */
+    z-index: 100;
+}
+
+/* 헤더 */
+header{
+    grid-area: header;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0.625rem;
+}
+.profile-col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* 프로필 사진 */
+
+.profile-img{
+
+    width: 3.125rem;
+    margin-right: 0.625rem;
+}
+
+/* 프로필 사진 빈공간 */
+
+.not-profile-img{
+    width: 3.125rem;
+    height: 0.001rem;
+    margin-right: 0.625rem;
+}
+
+
+/* 채팅 왼쪽 프로필명 */
+
+.profile-name{
+    font-size: 0.8125rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.2125rem;
+    
+}
+
+/* main(채팅내용) 스타일 지정 */
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.chat-content{
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+}
+
+/* 말풍선 공통 스타일 지정 */
+.YH-chat-col{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* 친구의 채팅 말풍선들 flex 레이아웃 구성 */
+.YH-chat{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-top: 0.3125rem;
+    margin-bottom: 0.3125rem;
+}
+.YH-chat > .profile-img{
+    align-self: flex-start;
+}
+.YH-chat-col > .balloon{
+    margin-top: 0.3125rem;
+    padding: 0.4375rem;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    color: black;
+}
+
+/* 채팅 말풍선의 시간(time) 아래로 정렬 (flex item들) */
+.main-chat time{
+    align-self: flex-end;
+    flex-basis: 3.75rem;
+    flex-shrink: 0;
+    margin-left: 0.3125rem;
+    margin-right: 0.3125rem;
+    padding-left: 0.3rem;
+    font-size: 0.75rem;
+    color: rgb(88, 88, 88);
+    text-align: left;
+}
+.YH-chat > time{
+    margin-right: 2.5rem;
+}
+.me-chat > time{
+    margin-left: 2.5rem;
+}
+
+/* 날짜선(date-line) 스타일 지정 */
+.date-line{
+    /* flex 사용 */
+    display: flex;
+    margin-top: 7px;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgb(88, 88, 88);
+    font-size: 0.875rem;   
+}
+.date-line::before, .date-line::after{
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(88, 88, 88, 0.3);
+    font-size: 0px;
+    line-height: 0px;
+}
+
+.date-line2{
+    /* flex 사용 */
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgb(88, 88, 88);
+    font-size: 0.875rem;   
+}
+.date-line2::before, .date-line2::after{
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 0px;
+    line-height: 0px;
+}

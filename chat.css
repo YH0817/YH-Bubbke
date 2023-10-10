@@ -52,14 +52,14 @@ header{
 
 .profile-img{
 
-    width: 3.125rem;
+    width: 2.5rem;
     margin-right: 0.625rem;
 }
 
 /* 프로필 사진 빈공간 */
 
 .not-profile-img{
-    width: 3.125rem;
+    width: 2.5rem;
     height: 0.001rem;
     margin-right: 0.625rem;
 }
@@ -122,17 +122,14 @@ main{
     flex-basis: 3.75rem;
     flex-shrink: 0;
     margin-left: 0.3125rem;
-    margin-right: 0.3125rem;
+    margin-right: 0.1125rem;
     padding-left: 0.3rem;
     font-size: 0.75rem;
     color: rgb(88, 88, 88);
     text-align: left;
 }
 .YH-chat > time{
-    margin-right: 2.5rem;
-}
-.me-chat > time{
-    margin-left: 2.5rem;
+    margin-right: 0.5rem;
 }
 
 /* 날짜선(date-line) 스타일 지정 */

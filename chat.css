@@ -53,6 +53,7 @@ header{
 .profile-img{
 
     width: 2.5rem;
+    margin-top: 0.625rem;
     margin-right: 0.625rem;
 }
 
@@ -61,6 +62,7 @@ header{
 .not-profile-img{
     width: 2.5rem;
     height: 0.001rem;
+    margin-top: 0.625rem;
     margin-right: 0.625rem;
 }
 
@@ -110,7 +112,10 @@ main{
     margin-top: 0.3125rem;
     padding: 0.4375rem;
     border: 1px solid rgb(255, 255, 255);
-    border-radius: 0.5rem;
+    /*border-radius: 0.5rem;*/
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
     background-color: rgb(255, 255, 255);
     font-size: 0.9rem;
     color: black;
@@ -124,8 +129,8 @@ main{
     margin-left: 0.3125rem;
     margin-right: 0.1125rem;
     padding-left: 0.3rem;
-    font-size: 0.75rem;
-    color: rgb(88, 88, 88);
+    font-size: 0.70rem;
+    color: rgb(99, 99, 99);
     text-align: left;
 }
 .YH-chat > time{
@@ -136,11 +141,11 @@ main{
 .date-line{
     /* flex 사용 */
     display: flex;
-    margin-top: 7px;
+    margin-top: 15px;
     flex-basis: 100%;
     align-items: center;
-    color: rgb(88, 88, 88);
-    font-size: 0.875rem;   
+    color: rgb(99, 99, 99);;
+    font-size: 0.05rem;   
 }
 .date-line::before, .date-line::after{
     content: "";
@@ -154,16 +159,18 @@ main{
 .date-line2{
     /* flex 사용 */
     display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
     flex-basis: 100%;
     align-items: center;
-    color: rgb(88, 88, 88);
-    font-size: 0.875rem;   
+    color: rgb(99, 99, 99);
+    font-size: 0.775rem;   
 }
 .date-line2::before, .date-line2::after{
     content: "";
     flex-grow: 1;
     height: 1px;
     background-color: rgba(255, 255, 255, 0);
-    font-size: 0px;
+    font-size: 1px;
     line-height: 0px;
 }

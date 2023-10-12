@@ -130,8 +130,8 @@ main{
     margin-right: 0.1125rem;
     margin-bottom: -0.15rem;
     padding-left: 0.3rem;
-    font-size: 0.7rem;
-    color: rgb(99, 99, 99);
+    font-size: 0.6rem;
+    color: #a9a9a9;
     text-align: left;
 }
 .YH-chat > time{
@@ -145,7 +145,7 @@ main{
     margin-top: 15px;
     flex-basis: 100%;
     align-items: center;
-    color: rgb(99, 99, 99);;
+    color: #787878;;
     font-size: 0.05rem;   
 }
 .date-line::before, .date-line::after{
@@ -164,7 +164,7 @@ main{
     margin-bottom: 10px;
     flex-basis: 100%;
     align-items: center;
-    color: rgb(99, 99, 99);
+    color: #787878;
     font-size: 0.775rem;   
 }
 .date-line2::before, .date-line2::after{
